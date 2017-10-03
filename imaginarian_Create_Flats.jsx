@@ -33,7 +33,12 @@ if(doc.activeLayer.name == 'FLATS' && doc.activeLayer.typename == 'LayerSet') {
     oldLayer.remove()
   }
 
+//SELECT FLAT GROUP
 doc.activeLayer = flatGroup
+
+//ALERT
+alert('Flats Successfully created')
+
 //IF THERE IS NO FLATS GROUP
 } else {alert("No \"FLATS\" group could be found, you should place your layers in a group named \"FLATS\" and select it before running the script")}
 
